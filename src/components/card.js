@@ -25,16 +25,14 @@ height:400
 export default function MediaCard({url,img,des,name}) {
   const classes = useStyles();
 console.log(name)
-  const downl=()=>{
-    down(url, name)
-
-}
+  
 
   return (
     
     <Card className={classes.root}>
-   
-      <CardActionArea onClick={downl}>
+   <a href={url}>
+      <CardActionArea >
+        
         <CardMedia
           className={classes.media}
           image={img}
@@ -48,9 +46,10 @@ console.log(name)
           </Typography>
         </CardContent>
       </CardActionArea>
+      </a>
       <CardActions>
        
-        <Button size="small" color="primary" onClick={downl}>
+        <Button component={"a"} size="small" color="primary" href={url}>
           Download
         </Button>
        

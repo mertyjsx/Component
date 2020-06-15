@@ -32,7 +32,7 @@ console.log("file",fileurl)
 
   if(fileurl&&url){
 
-
+console.log("burdaaaa")
 let newdata={
 filename:file.name,
 img:url,
@@ -111,7 +111,8 @@ let number =Math.floor(Math.random() * Math.floor(10000));
           .child(`${number}`)
           .getDownloadURL()
           .then(url => {
-            setUrl(url);
+         
+  setUrl(url)
           });
       }
     );
@@ -121,7 +122,7 @@ let number =Math.floor(Math.random() * Math.floor(10000));
 
     let number =Math.floor(Math.random() * Math.floor(10000));
     
-        const uploadTask = firebase.storage().ref(`file/${number}`).put(file);
+        const uploadTask = firebase.storage().ref(`file/${number}_${file.name}`).put(file);
         uploadTask.on(
           "state_changed",
           snapshot => {
@@ -137,7 +138,7 @@ let number =Math.floor(Math.random() * Math.floor(10000));
           () => {
             firebase.storage()
               .ref("file")
-              .child(`${number}`)
+              .child(`${number}_${file.name}`)
               .getDownloadURL()
               .then(url => {
                 console.log(url)
@@ -154,10 +155,7 @@ let number =Math.floor(Math.random() * Math.floor(10000));
 
   console.log("image: ", url);
 
-const downl=()=>{
-    down(url, 'filename.js')
 
-}
 
 
   return (
