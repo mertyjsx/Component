@@ -1,6 +1,213 @@
 .App {
   text-align: center;
 }
+.carousel .slide{
+  background-color: #352961 !important;
+  border-top-left-radius: 150px !important;
+}
+
+.carousel{
+  border-top-left-radius: 150px !important;
+}
+
+.alice-carousel__wrapper{
+
+ border-top-left-radius: 150px !important;
+  
+}
+
+
+.START{
+display: flex;
+flex-direction: column;
+justify-content: start;
+
+}
+
+
+.navbarc{
+
+justify-content: space-between;
+z-index: 200;
+flex-direction: row;
+}
+
+
+.left{
+background-color:#352961 ;
+height: 1200px;
+border-bottom-right-radius: 220px;
+z-index: -1;
+
+}
+
+
+.lefts{
+  background-color:#352961 ;
+  height: 800px;
+  border-bottom-right-radius: 220px;
+  z-index: -1;
+  
+  }
+
+  .leftss{
+    background-color:#352961 ;
+    height: 1200px;
+    border-bottom-right-radius: 220px;
+    z-index: -1;
+    
+    }
+
+
+.btn{
+  color:"white" !important;
+  margin:30;
+  border-color: white !important;
+  width: 250px;
+  height: 80px;
+}
+
+
+.ınput{
+color: black;
+border: 1px solid black;
+}
+
+.btna{
+  width: 400px;
+  height: 50px;
+}
+
+.btn2{
+border : 1px solid ;
+  color:#352961 !important;
+  margin:30;
+  border-color: #352961 !important;
+  width: 250px;
+  height: 80px;
+}
+
+.imgr{
+
+ 
+  width: 100%;
+height: 600px;
+object-fit: cover;
+
+}
+a{text-decoration: none !important;}
+
+.container{
+  
+height: 800px; 
+}
+
+.item{
+  margin-right: 150px !important;
+
+z-index: 200;
+height: 300px;
+background-color:#352961 ;
+
+}
+
+.navbarR{
+  align-items: center;
+width: 150px;
+height: 100px;
+
+z-index: 200;
+justify-content:start;
+}
+
+.a{
+font-size: 20px;
+font-family: 'Nunito', sans-serif;
+text-transform: none;
+}
+.ab{
+  font-size: 30px;
+  color: white;
+  font-family: 'Nunito', sans-serif;
+  text-transform: none;
+  }
+
+
+  li{
+    width: 100% !important;
+    min-width: 100% !important;
+  }
+
+p{
+
+  font-family: 'Nunito Sans', sans-serif;
+  line-height: 1.7;
+  text-align: start;
+    letter-spacing: 1px;
+  color: white;
+    font-size: 20px;
+}
+
+
+
+h6{font-size: 20px;
+  text-transform: none;
+  font-family: 'Roboto', sans-serif;
+  }
+
+h1{
+text-align: start;
+  font-size: 3rem;
+  font-weight: 900;
+  color: #fff;
+  
+  font-family: "Oswald", sans-serif;
+ 
+ 
+
+
+}
+
+
+.navbarRi1{
+ margin-left: 70px !important;
+
+ 
+  z-index: 200;
+
+  }
+  .navbarRi2{
+    margin-left:50px  !important;
+    
+     z-index: 200;
+   
+     }
+.itemr{
+
+  border-top-left-radius: 100px !important;
+  padding: 0 !important;
+  margin-right: 150px !important;
+
+z-index: 200;
+height: 400px;
+
+
+}
+
+
+
+
+
+.absolute{
+  position: absolute;
+  top:0;
+  width: 100%;
+}
+
+.right{
+
+
+}
 
 .App-logo {
   height: 40vmin;
